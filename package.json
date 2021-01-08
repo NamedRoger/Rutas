@@ -1,0 +1,20 @@
+{
+  "name": "rutas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": {
+    "name": "NamedRoger"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.1.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
