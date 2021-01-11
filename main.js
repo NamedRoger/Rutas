@@ -1,5 +1,5 @@
 
-const {app, BrowserWindow, session } = require('electron');
+const {app, BrowserWindow, session, Notification } = require('electron');
 const path = require('path');
 
 const createPrincipalView = () => {
@@ -13,9 +13,6 @@ const createPrincipalView = () => {
         }
     });
     win.loadURL(`file://${__dirname}/index.html`);
-    const sesssion = session;
-    console.log(sesssion.defaultSession);
-    win.webContents.openDevTools();
 }
 
 app.on('window-all-closed', () => {
@@ -29,3 +26,4 @@ app.whenReady().then(() => {
         createPrincipalView();
     }
 });
+
